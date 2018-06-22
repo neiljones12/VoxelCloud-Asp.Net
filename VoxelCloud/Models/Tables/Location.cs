@@ -2,6 +2,6 @@
 {
     public class Location : Base
     {
-        
+        public string Name { get; set; }
     }
 }
