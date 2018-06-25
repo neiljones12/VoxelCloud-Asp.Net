@@ -2,7 +2,7 @@
 
 namespace VoxelCloud.Models.Tables
 {
-    public class Product : Base
+    public class Device : Base
     {
         public string Name { get; set; }
 

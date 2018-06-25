@@ -7,14 +7,14 @@ using System.Web;
 
 namespace VoxelCloud.Models.Tables
 {
-    public class ProductEvent
+    public class DeviceEvent
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
         public int Id { get; set; }
 
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
+        [ForeignKey("Device")]
+        public int DeviceId { get; set; }
 
         public int? Status_At_Event_Compressor { get; set; }
 
@@ -30,6 +30,6 @@ namespace VoxelCloud.Models.Tables
 
         public string Timestamp { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual Device Device { get; set; }
     }
 }

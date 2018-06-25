@@ -31,27 +31,45 @@ namespace VoxelCloud.Helpers
         }
 
 
-        public List<Product> ProductList()
+        public List<Device> DeviceList()
         {
-            var result = new List<Product>();
+            var result = new List<Device>();
 
-            var product_1 = new Product();
-            product_1.Id = 1;
-            product_1.Name = "Product 1";
-            product_1.Ip_Address = "10.0.0.4";
-            product_1.Mac_Address = "001122334455";
-            product_1.Serial_Number = "1";
-            product_1.Compressor_status = 1;
-            product_1.Fan_status = 0;
-            product_1.Temperature_alert = 0;
-            product_1.Temperature = 75;
-            product_1.Installation_Date = DateTime.Now.ToString("M/d/yyyy");
-            product_1.Communication_Frequency = 24;
-            product_1.Reporting_Url = Url;
-            product_1.Write_Frequency = 10;
-            product_1.Write_Time = 20;
+            var Device_1 = new Device();
+            Device_1.Id = 1;
+            Device_1.Name = "Device 1";
+            Device_1.Ip_Address = "10.0.0.4";
+            Device_1.Mac_Address = "001122334455";
+            Device_1.Serial_Number = "1";
+            Device_1.Compressor_status = 1;
+            Device_1.Fan_status = 0;
+            Device_1.Temperature_alert = 0;
+            Device_1.Temperature = 75;
+            Device_1.Installation_Date = DateTime.Now.ToString("M/d/yyyy");
+            Device_1.Timestamp = DateTime.Now.ToString("M/d/yyyy");
+            Device_1.Communication_Frequency = 24;
+            Device_1.Reporting_Url = Url;
+            Device_1.Write_Frequency = 10;
+            Device_1.Write_Time = 20;
+            result.Add(Device_1);
 
-            result.Add(product_1);
+            var Device_2 = new Device();
+            Device_2.Id = 2;
+            Device_2.Name = "Device 2";
+            Device_2.Ip_Address = "10.0.0.6";
+            Device_2.Mac_Address = "001122334466";
+            Device_2.Serial_Number = "2";
+            Device_2.Compressor_status = 1;
+            Device_2.Fan_status = 0;
+            Device_2.Temperature_alert = 0;
+            Device_2.Temperature = 50;
+            Device_2.Installation_Date = DateTime.Now.ToString("M/d/yyyy");
+            Device_2.Timestamp = DateTime.Now.ToString("M/d/yyyy");
+            Device_2.Communication_Frequency = 24;
+            Device_2.Reporting_Url = Url;
+            Device_2.Write_Frequency = 10;
+            Device_2.Write_Time = 20;
+            result.Add(Device_2);
 
             return result;
         }
@@ -62,7 +80,8 @@ namespace VoxelCloud.Helpers
 
             var customer_1 = new Customer();
             customer_1.Id = 1;
-            customer_1.Customer_Number = "AA12CA";
+            customer_1.Customer_Number = "AA1122";
+            customer_1.Password = "password";
             customer_1.Active = true;
             result.Add(customer_1);
 
@@ -82,15 +101,21 @@ namespace VoxelCloud.Helpers
             return result;
         }
 
-        public List<CustomerProduct> CustomerProductList()
+        public List<CustomerDevice> CustomerDeviceList()
         {
-            var result = new List<CustomerProduct>();
+            var result = new List<CustomerDevice>();
 
-            var CustomerProduct_1 = new CustomerProduct();
-            CustomerProduct_1.Id = 1;
-            CustomerProduct_1.CustomerId = 1;
-            CustomerProduct_1.ProductId = 1;
-            result.Add(CustomerProduct_1);
+            var CustomerDevice_1 = new CustomerDevice();
+            CustomerDevice_1.Id = 1;
+            CustomerDevice_1.CustomerId = 1;
+            CustomerDevice_1.DeviceId = 1;
+            result.Add(CustomerDevice_1);
+
+            var CustomerDevice_2 = new CustomerDevice();
+            CustomerDevice_2.Id = 2;
+            CustomerDevice_2.CustomerId = 1;
+            CustomerDevice_2.DeviceId = 2;
+            result.Add(CustomerDevice_2);
 
             return result;
         }

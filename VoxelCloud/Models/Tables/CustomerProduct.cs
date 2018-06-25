@@ -7,7 +7,7 @@ using System.Web;
 
 namespace VoxelCloud.Models.Tables
 {
-    public class CustomerProduct
+    public class CustomerDevice
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Key]
@@ -16,11 +16,11 @@ namespace VoxelCloud.Models.Tables
         [ForeignKey("Customer")]
         public int CustomerId { get; set; }
 
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
+        [ForeignKey("Device")]
+        public int DeviceId { get; set; }
 
         public virtual Customer Customer { get; set; }
 
-        public virtual Product Product { get; set; }
+        public virtual Device Device { get; set; }
     }
 }
