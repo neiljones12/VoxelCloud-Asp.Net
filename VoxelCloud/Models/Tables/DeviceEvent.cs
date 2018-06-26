@@ -16,17 +16,19 @@ namespace VoxelCloud.Models.Tables
         [ForeignKey("Device")]
         public int DeviceId { get; set; }
 
-        public int? Status_At_Event_Compressor { get; set; }
+        public int Status_At_Event_Compressor { get; set; }
 
-        public int? Status_At_Event_Fan { get; set; }
+        public int Status_At_Event_Fan { get; set; }
 
-        public int? Status_After_Event_Compressor { get; set; }
+        public int Status_After_Event_Compressor { get; set; }
 
-        public int? Status_After_Event_Fan { get; set; }
+        public int Status_After_Event_Fan { get; set; }
 
-        public bool? Restart_Check_Compressor { get; set; }
+        public int Restart_Check_Compressor { get; set; }
 
-        public bool? Restart_Check_Fan { get; set; }
+        public int Restart_Check_Fan { get; set; }
+        
+        public int Temperature { get; set; }
 
         public string Timestamp { get; set; }
 

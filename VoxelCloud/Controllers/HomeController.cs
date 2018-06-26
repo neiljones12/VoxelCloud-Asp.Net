@@ -66,6 +66,13 @@ namespace VoxelCloud.Controllers
                 db.CustomerDevice.Add(c);
             }
 
+            var deviceLogs = listHelper.DeviceEventList();
+            foreach (var d in deviceLogs)
+            {
+                db.DeviceEvent.Add(d);
+            }
+            
+
             db.SaveChanges();
         }
     }
