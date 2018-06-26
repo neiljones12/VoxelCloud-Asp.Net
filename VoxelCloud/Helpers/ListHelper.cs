@@ -76,7 +76,7 @@ namespace VoxelCloud.Helpers
             Device_3.Id = 3;
             Device_3.Name = "Device 3";
             Device_3.Ip_Address = "10.11.0.1";
-            Device_3.Mac_Address = "001122334466";
+            Device_3.Mac_Address = "001122334477";
             Device_3.Serial_Number = "1003";
             Device_3.Compressor_status = 1;
             Device_3.Fan_status = 1;
