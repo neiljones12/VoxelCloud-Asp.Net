@@ -6,6 +6,7 @@ namespace VoxelCloud.Helpers
 {
     public class ListHelper
     {
+        // This method is used to populate the tables with values
         private string Url = "https://voxelcloud-demo-python.herokuapp.com";
 
         public List<Location> LocationList()

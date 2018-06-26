@@ -13,6 +13,7 @@ namespace VoxelCloud.Models.Tables
         [Key]
         public int Id { get; set; }
 
+        // Establishing a foreign key relationship
         [ForeignKey("Device")]
         public int DeviceId { get; set; }
 

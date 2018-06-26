@@ -10,9 +10,11 @@ namespace VoxelCloud.Models.Tables
         [Key]
         public int Id { get; set; }
 
+        // Establishing a foreign key relationship
         [ForeignKey("Customer")]
         public int CustomerId { get; set; }
 
+        // Establishing a foreign key relationship
         [ForeignKey("Location")]
         public int LocationId { get; set; }
 
