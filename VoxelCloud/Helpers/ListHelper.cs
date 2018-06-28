@@ -40,7 +40,7 @@ namespace VoxelCloud.Helpers
             Device_1.Id = 1;
             Device_1.Name = "Device 1";
             Device_1.Ip_Address = "10.0.0.4";
-            Device_1.Mac_Address = "001122334455";
+            Device_1.Mac_Address = "3DF2C9A6B34F";
             Device_1.Serial_Number = "1001";
             Device_1.Compressor_status = 1;
             Device_1.Fan_status = 0;
@@ -58,7 +58,7 @@ namespace VoxelCloud.Helpers
             Device_2.Id = 2;
             Device_2.Name = "Device 2";
             Device_2.Ip_Address = "10.0.0.6";
-            Device_2.Mac_Address = "001122334466";
+            Device_2.Mac_Address = "3DF2D9B7B34F";
             Device_2.Serial_Number = "1002";
             Device_2.Compressor_status = 1;
             Device_2.Fan_status = 0;
@@ -76,7 +76,7 @@ namespace VoxelCloud.Helpers
             Device_3.Id = 3;
             Device_3.Name = "Device 3";
             Device_3.Ip_Address = "10.11.0.1";
-            Device_3.Mac_Address = "001122334477";
+            Device_3.Mac_Address = "4EF2D9B7B34F";
             Device_3.Serial_Number = "1003";
             Device_3.Compressor_status = 1;
             Device_3.Fan_status = 1;
