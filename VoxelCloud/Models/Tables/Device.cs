@@ -4,6 +4,10 @@ namespace VoxelCloud.Models.Tables
 {
     public class Device : Base
     {
+        public Device()
+        {
+            Active = true;
+        }
         public string Name { get; set; }
 
         public int Compressor_status { get; set; }
@@ -31,6 +35,8 @@ namespace VoxelCloud.Models.Tables
         public string Reporting_Url { get; set; }
 
         public string Timestamp { get; set; }
+
+        public bool Active { get; set; }
 
     }
 }
