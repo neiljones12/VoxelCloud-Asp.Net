@@ -100,14 +100,14 @@ namespace VoxelCloud.Helpers
             var customer_1 = new Customer();
             customer_1.Id = 1;
             customer_1.Customer_Number = "AA1122";
-            customer_1.Password = "cb6f492f80cec244cd054b8c62243c80dcde1af70201552d65dfd62c02f3afe0:f550881015ad460899e1135b297d9fa2";
+            customer_1.PasswordHash = "cb6f492f80cec244cd054b8c62243c80dcde1af70201552d65dfd62c02f3afe0:f550881015ad460899e1135b297d9fa2";
             customer_1.Active = true;
             result.Add(customer_1);
 
             var customer_2 = new Customer();
             customer_2.Id = 2;
             customer_2.Customer_Number = "ABCD12";
-            customer_2.Password = "cb6f492f80cec244cd054b8c62243c80dcde1af70201552d65dfd62c02f3afe0:f550881015ad460899e1135b297d9fa2";
+            customer_2.PasswordHash = "cb6f492f80cec244cd054b8c62243c80dcde1af70201552d65dfd62c02f3afe0:f550881015ad460899e1135b297d9fa2";
             customer_2.Active = true;
             result.Add(customer_2);
 
